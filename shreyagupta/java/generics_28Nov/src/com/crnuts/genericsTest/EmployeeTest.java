@@ -31,7 +31,7 @@ public class EmployeeTest {
 		List<Employee> list = new ArrayList<>();
 
 //********* QUES 1 *********
-		// employees.add(5); // The method add(int, Employee) in the type List<Employee>
+		// employees.add(5); // The method add( Employee) in the type List<Employee>
 		// is not applicable for the arguments (int)
 		
 

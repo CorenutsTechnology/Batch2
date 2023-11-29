@@ -6,24 +6,22 @@ import java.util.ArrayList;
 
 public class GenericClass<T> {
 
-	String str ;
-	private T t1;
+	private T obj;
 
-	public GenericClass(String str, T t1) {
-		super();
-		this.str = str;
-		this.t1 = t1;
+	public GenericClass(T obj) {
+		this.obj = obj;
 	}
 
-	
-	public T getT1() {
-		return t1;
+	public T getGeneric() {
+		return this.obj;
 	}
 
-	public void setT1(T t1) {
-		this.t1 = t1;
+	public T getObj() {
+		return obj;
 	}
-	
-	
+
+	public void setObj(T obj) {
+		this.obj = obj;
+	}
 
 }

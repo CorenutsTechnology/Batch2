@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        ul ul{
+            display: none;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        #main-menu > li:hover ul{
+            display: block;
+
+        }
+        #main-menu > li:hover{
+            background-color: blueviolet;
+        }
+        #main-menu > li a{
+            background: black;
+            color: white;
+            padding: 0.2rem;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <u1 id="main-menu">
+        <li>
+            <a >Main menu</a>
+            <ul>
+                <ul>sub menu 1</ul>
+                <ul>sub menu 2</ul>
+                <ul>sub menu 3</ul>
+                <ul>sub menu 4</ul>
+            </ul>
+        </li>
+    </u1>
+    
+</body>
+</html>

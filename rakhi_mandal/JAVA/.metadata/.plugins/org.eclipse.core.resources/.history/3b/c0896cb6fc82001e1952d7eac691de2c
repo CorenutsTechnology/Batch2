@@ -1,0 +1,29 @@
+package assignment4_Loops;
+
+import java.util.Random;
+
+public class RandomValues {
+
+	public static void main(String[] args) {
+		Random random=new Random();
+		int [] array=new int[25];
+		for(int index=0;index<25;index++)
+		{  
+			array[index]=random.nextInt(1000);
+			System.out.println(array[index]);
+		}
+		System.out.println("---------------------------");
+		for(int index=0;index<25;index++)
+		{ 
+	       if(array[index+1]>array[index])
+	    	   System.out.println("Greater than" +array[index]);
+	       
+	       else if(array[index+1]<array[index])
+	    	   System.out.println("Smaller than" +array[index]);
+	       else if(array[index+1]==array[index])
+	    	   System.out.println("Equal to" +array[index]);
+		}
+		
+	}
+
+}

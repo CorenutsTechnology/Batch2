@@ -1,0 +1,10 @@
+package com.crnts.List;
+
+public class Test {
+	public static void main(String[] args) {
+		StringBuilder builder=new StringBuilder("Hello");
+		builder.append(null);
+		System.out.println(builder);
+
+}
+}

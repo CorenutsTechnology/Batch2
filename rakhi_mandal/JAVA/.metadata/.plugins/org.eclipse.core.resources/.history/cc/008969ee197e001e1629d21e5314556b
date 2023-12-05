@@ -1,0 +1,19 @@
+package assignment2;
+
+public class Program4 {
+
+	public static void main(String[] args) {
+		Program4 classObject=new Program4();
+		
+		
+	
+
+	}
+	public void intValuesSum(int[] intArray)
+	{
+		int intArray[]=  {5,6,4,33}; 
+		
+		
+	}
+
+}

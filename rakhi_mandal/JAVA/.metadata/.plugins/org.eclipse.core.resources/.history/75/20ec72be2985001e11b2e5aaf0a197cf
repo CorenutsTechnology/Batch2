@@ -1,0 +1,32 @@
+package com.crnts.exceptions;
+
+import java.util.Scanner;
+
+public class ExceptionP5 implements P5Exception  {
+	  Scanner sc =new Scanner(System.in);
+	public static void main(String[] args) {
+		
+	}
+	@Override
+	public  void handleException()
+	{
+		int[] array={9,4,3};
+		try{
+			System.out.println("Enter the array index:");
+		   int responseIndex=sc.nextInt();
+		   
+		   System.out.println("Enter any number :");
+		   int response=sc.nextInt();
+		
+			for(int index=0;index<=array.length;index++)
+		{ 
+			System.out.println(responseIndex/response);
+		}
+	}catch(ArrayIndexOutOfBoundsException e)
+	{
+		System.out.println("Exception handled");
+//		e.printStackTrace();
+	}
+	}
+
+}

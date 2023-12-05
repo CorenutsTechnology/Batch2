@@ -1,0 +1,23 @@
+package assignment2;
+
+public class Program4 {
+
+	public static void main(String[] args) {
+		Program4 classObject=new Program4();
+		int intArray[]= new int [5];
+		classObject.intValues(intArray);
+		
+	
+
+	}
+	public void intValues(int[] intArray)
+	{
+		intArray[0]=10;
+		intArray[2]=11;
+		intArray[1]=12;
+		intArray[3]=13;
+		intArray[4]=14;
+		
+	}
+
+}

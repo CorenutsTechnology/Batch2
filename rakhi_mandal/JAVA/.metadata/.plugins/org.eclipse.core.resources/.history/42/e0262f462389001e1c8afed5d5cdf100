@@ -1,0 +1,23 @@
+package com.crnts.oopsConstructors;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class SubClassP1 extends SuperClassP1 {
+	public static void main(String[] args) {
+		SubClassP1 subClassP1=new SubClassP1();
+		subClassP1.display2(5);
+	}
+	
+	//CTE-Case 1
+//	public void display1() throws FileNotFoundException   {
+//	FileInputStream fileInputStream=new FileInputStream("/Users/Rakhi Mandal/Desktop/pr.txt");
+//	
+//}
+	//Case 2
+	void display2(int value1)
+   {  
+		int result=value1/0;
+		System.out.println(result);
+		}
+	}

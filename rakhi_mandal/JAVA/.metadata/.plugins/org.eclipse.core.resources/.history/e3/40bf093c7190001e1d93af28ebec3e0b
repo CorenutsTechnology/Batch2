@@ -1,0 +1,30 @@
+package com.crnts.solid;
+
+public class Billing_S {
+
+	private Billing billing;
+
+	public Billing getBilling() {
+		return billing;
+	}
+
+	public void setBilling(Billing billing) {
+		this.billing = billing;
+	}
+
+//	public double calculateTotal() {
+//		double price = (billing.getQuantity() * billing.getBook().price);
+//		return price;
+//	}
+
+	public void printInvoice() {
+		System.out.println(billing.getQuantity() + " x " + billing.getBook().name + " = Rs" + billing.getBook().price);
+		System.out.println("Total: " + billing.getTotal());
+	}
+
+	public static void main(String[] args) {
+		Billing_S billing =new Billing_S();
+		billing.printInvoice();
+	}
+
+}

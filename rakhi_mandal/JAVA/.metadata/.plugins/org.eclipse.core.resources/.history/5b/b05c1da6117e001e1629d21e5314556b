@@ -1,0 +1,41 @@
+package assignment2;
+
+
+public class Program1 {
+
+	public static void main(String[] args) {
+		int intArray[]= new int [5];
+		Program1 classObject=new Program1();
+		classObject.intValues(intArray);
+		classObject.longValues(longArray);
+
+	}
+	private void intValues(int[] intArray)
+	{
+		intArray[0]=10;
+		intArray[2]=11;
+		intArray[1]=12;
+		intArray[3]=13;
+		intArray[4]=14;
+		System.out.println(intArray[0]);
+		System.out.println(intArray[1]);
+		System.out.println(intArray[2]);
+		System.out.println(intArray[3]);
+		System.out.println(intArray[4]);
+	}
+	
+	private void longValues(int[] longArray)
+	{
+		longArray[0]=1090980808;
+		longArray[2]=1909808081;
+		longArray[1]=1290980808;
+		longArray[3]=1909808083;
+		longArray[4]=190980894;
+		System.out.println(longArray[0]);
+		System.out.println(longArray[1]);
+		System.out.println(longArray[2]);
+		System.out.println(longArray[3]);
+		System.out.println(longArray[4]);
+	}
+
+}

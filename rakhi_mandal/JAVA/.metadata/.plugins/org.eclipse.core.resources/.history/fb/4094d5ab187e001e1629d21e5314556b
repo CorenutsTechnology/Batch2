@@ -1,0 +1,9 @@
+package assignment2;
+
+public class Program3 {
+ public static void main(String[] args) {
+		int [] intArray=new int[-3];
+//		intArray[-1]=89;
+//		intArray[-2]=9;
+}
+}

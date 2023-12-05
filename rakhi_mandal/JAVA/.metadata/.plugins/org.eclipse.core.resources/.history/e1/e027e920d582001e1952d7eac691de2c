@@ -1,0 +1,22 @@
+package assignment4_Loops;
+
+import java.util.Scanner;
+
+public class SwitchCases {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Enter the month name:");
+		String month=sc.nextLine();
+		switch(month)
+		{
+		case "jan":System.out.println("It is january month");
+		case "feb":System.out.println("It is february month");
+		case "mar":System.out.println("It is march month");
+		case "april":System.out.println("It is april month");
+		default: System.out.println("Enter valid month name");
+		}
+		
+	}
+
+}

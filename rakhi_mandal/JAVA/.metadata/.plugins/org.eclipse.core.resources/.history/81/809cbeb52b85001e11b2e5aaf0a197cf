@@ -1,0 +1,10 @@
+package com.crnts.exceptions;
+
+public class P6Exception {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

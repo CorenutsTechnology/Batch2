@@ -1,0 +1,22 @@
+package com.crnts.Generics;
+
+public class GeneralClass<T> {
+    private T id;
+//    private String name;
+    private T name;
+    
+    
+	public T getId() {
+		return id;
+	}
+	public void setId(T id) {
+		this.id = id;
+	}
+	public T getName() {
+		return name;
+	}
+	public void setName(T name) {
+		this.name = name;
+	}
+    
+}

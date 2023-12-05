@@ -1,0 +1,51 @@
+package com.crnts.List;
+
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+
+import arrays.Person;
+
+public class AddPrimitiveDataToArrayList {
+	Integer array[]= {1,4,2,2,2};
+	List list=Arrays.asList(array);
+
+	public static void main(String[] args) {
+		AddPrimitiveDataToArrayList addPrimitiveDataToArrayList=new AddPrimitiveDataToArrayList();
+		System.out.println("UsingForLoop()");
+		addPrimitiveDataToArrayList.displayUsingForLoop();
+		System.out.println();
+		System.out.println("UsingForIterator()");
+		addPrimitiveDataToArrayList.displayUsingIterator();
+		addPrimitiveDataToArrayList1.displayUsingIterator();
+	}
+	
+	public void displayUsingIterator()
+	{
+		Iterator<Integer> listWithIterator=list.iterator();
+		while(listWithIterator.hasNext())
+		{
+			System.out.print(listWithIterator.next()+" ");
+		}
+	
+		
+	}
+	
+	public void displayUsingForLoop()
+	{
+		for(int index=0;index<list.size();index++)
+		{
+			System.out.print(list.get(index)+" ");
+		}
+	}
+	
+	public void displayUsingForLoop1()
+	{	Iterator<Integer> listWithIterator=list.iterator();
+		for(int index=0;index<listWithIterator.next();index++)
+		{
+			System.out.print(listWithIterator.next()+" ");		}
+	}
+	}
+		
+
+

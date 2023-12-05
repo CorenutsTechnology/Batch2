@@ -1,0 +1,5 @@
+package com.crnts.List;
+
+abstract class Shape{
+abstract void draw();
+}

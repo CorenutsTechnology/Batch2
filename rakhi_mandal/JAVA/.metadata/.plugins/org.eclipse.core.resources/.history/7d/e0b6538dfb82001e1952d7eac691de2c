@@ -1,0 +1,18 @@
+package assignment4_Loops;
+
+import java.util.Random;
+
+public class RandomValues {
+
+	public static void main(String[] args) {
+		Random random=new Random();
+		int [] array=new int[25];
+		for(int index=0;index<25;index++)
+		{  
+			array[index]=random.nextInt(100);
+			System.out.println(array[index]);
+		}
+		
+	}
+
+}

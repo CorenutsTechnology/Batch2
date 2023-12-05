@@ -1,0 +1,15 @@
+package assignment2;
+
+public class Prorgram6 {
+	char[] charArray={'r','a','k','h','i'};
+	public static void main(String[] args) {
+		view();
+
+	}
+	public static void view()
+	{
+		
+		System.out.println(charArray);
+	}
+
+}

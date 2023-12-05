@@ -1,0 +1,34 @@
+package com.crnts.Generics;
+
+public class GenericClass<Integer> {
+private	Integer id;
+private	Integer name;
+    String name1;
+   
+    public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Integer getName() {
+		return name;
+	}
+
+	public void setName(Integer name) {
+		this.name = name;
+	}
+
+	public Integer genericMethods(Integer obj)
+    {
+    return obj;
+    
+}
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,23 @@
+//	Write a program to print list elements in forward and backward direction?
+package com.crnts.List.Assignment;
+
+import java.util.ArrayList;
+
+public class ListIn2Direction {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void forwardDirection()
+	{
+		ArrayList<Student>array =new ArrayList();
+		array.add(new Student(1, "tom", "CBSE"));
+		array.add(new Student(26, "jack", "CBSE"));
+		array.add(new Student(3, "joe", "ICSE"));
+		array.add(new Student(2, "jerry", "CBSE"));
+		array.add(new Student(3, "abhi", "ICSE"));
+	}
+
+
+}

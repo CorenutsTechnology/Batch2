@@ -1,0 +1,26 @@
+package com.crnts.List;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CollectionToArray {
+	
+
+	public static void main(String[] args) {
+		CollectionToArray collectionToArray=new CollectionToArray();
+		collectionToArray.convertCollectionToArray();
+	}
+	public void convertCollectionToArray()
+	{
+		List<String> list=new ArrayList<>();
+		list.add("rakhi");
+		list.add("hhh");
+		list.add("hhh");
+		
+		
+		
+		System.out.println(list.toArray());
+	}
+
+
+}

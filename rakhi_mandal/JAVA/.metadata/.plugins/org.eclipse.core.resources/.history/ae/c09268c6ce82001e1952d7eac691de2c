@@ -1,0 +1,25 @@
+package assignment4_Loops;
+
+public class Fibonacci {
+	 static int c=1;
+	public static void main(String [] args) 
+		{  
+		   System.out.println(1);
+			fibo(0,1,c);
+			
+		}
+		public  static int fibo(int n1,int n2,int c) 
+		{ int n3=n1+n2;
+		if(c<20){
+		  System.out.println(n3);
+		  c++;
+//		  fibo(n2,n3,c);
+		  return  fibo(n2,n3,c);
+		} return 0;
+		
+		}
+		
+		
+	
+
+}

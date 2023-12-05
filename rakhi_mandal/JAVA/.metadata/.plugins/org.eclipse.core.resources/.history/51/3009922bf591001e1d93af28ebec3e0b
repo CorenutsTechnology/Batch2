@@ -1,0 +1,14 @@
+package com.crnts.List;
+
+import java.util.HashMap;
+
+public class  GenericNumQue {
+	public <T> void add(T num) {
+	
+		}
+		public static void main(String[] args) {
+		GenericNumQue que = new GenericNumQue();
+		 que.add(10);
+		}
+}
+

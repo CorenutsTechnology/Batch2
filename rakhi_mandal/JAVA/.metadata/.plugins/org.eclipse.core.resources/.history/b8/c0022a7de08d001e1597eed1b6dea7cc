@@ -1,0 +1,14 @@
+package com.crnts.Generics;
+
+public class GenericMethod {
+
+	public static void main(String[] args) {
+		genericMethod genericMethod
+	}
+	
+	public  <T> void add(GenericClass<T> value1,GenericClass<T> value2)
+	{
+		
+	}
+
+}

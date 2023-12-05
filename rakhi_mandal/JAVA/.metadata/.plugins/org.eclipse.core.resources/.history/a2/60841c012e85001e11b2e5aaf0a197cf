@@ -1,0 +1,6 @@
+package com.crnts.exceptions;
+
+public interface ExceptionP7 {
+   nullPointException();
+   no_nullPointException();
+}

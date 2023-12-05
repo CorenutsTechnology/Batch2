@@ -1,0 +1,10 @@
+package assignment4_Loops;
+
+public class RandomInfiniteLoop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

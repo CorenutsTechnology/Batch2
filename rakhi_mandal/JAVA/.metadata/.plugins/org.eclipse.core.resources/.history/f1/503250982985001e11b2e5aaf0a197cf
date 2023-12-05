@@ -1,0 +1,24 @@
+package com.crnts.exceptions;
+
+public class ExceptionP5 implements P5Exception  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	@Override
+	public  void handleException()
+	{
+		int[] array={9,4,3};
+		try{for(int index=0;index<=array.length;index++)
+		{
+			System.out.println(array[index]);
+		}
+	}catch(ArrayIndexOutOfBoundsException e)
+	{
+		System.out.println("Exception handled");
+//		e.printStackTrace();
+	}
+	}
+
+}

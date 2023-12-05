@@ -1,0 +1,24 @@
+package com.crnts.List;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Comparable {
+
+	public static void main(String[] args) {
+		Comparable comparable =new Comparable();
+		comparable.arrayList();
+	}
+	public void arrayList() {
+		List<String> list = new ArrayList<>();
+		list.add("rakhi");
+		list.add("neha");
+		list.add("tom");
+		list.add("jack");
+		list.add("swati");
+		
+		System.out.println(list);
+
+	}
+
+}

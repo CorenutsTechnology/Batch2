@@ -1,0 +1,7 @@
+package com.crnts.Generics;
+
+public interface GenericInterface<E> {
+	public E  m1(E obj);
+	
+
+}

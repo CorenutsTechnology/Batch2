@@ -1,0 +1,38 @@
+package com.crnts.List.Assignment;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class PrimitiveSetSort {
+	
+	public static void main(String[] args) {
+		PrimitiveSetSort primitiveSetSort =new PrimitiveSetSort();
+		primitiveSetSort.treeSet();
+	}
+
+	public void treeSet()
+	{
+		Set<Integer> set=new TreeSet<>(); //sorts the inputs   //accepts one null // no duplicates
+		set.add(20);
+		set.add(9);
+		set.add(7);
+		set.add(7); //if duplicates are added ,no exception only once it is started
+		set.add(77);
+		set.add(00);
+		set.add(8);
+		set.add(00);
+		set.add(null);
+//		hasSet.add(null);
+		
+		Iterator<Integer> listWithIterator=hasSet.iterator();
+		while(listWithIterator.hasNext())
+		{
+			System.out.println(listWithIterator.next()+" ");
+		}
+		
+	}
+
+}
+

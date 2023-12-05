@@ -1,0 +1,9 @@
+package assignment4_Loops;
+
+public class RandomValues {
+
+	public static void main(String[] args) {
+     
+	}
+
+}

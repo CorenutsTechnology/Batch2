@@ -1,0 +1,16 @@
+package com.crnts.List;
+
+import org.junit.platform.commons.util.StringUtils;
+
+public class Test {
+	public static void main(String[] args) {
+		String value = " ";
+	
+//		if (StringUtils.isNotEmpty(value))
+//		System.out.println("Hello World");
+		if (StringUtils.isNotBlank(value))
+		System.out.println("Hello World");
+		}
+
+
+}

@@ -1,0 +1,20 @@
+package assignment2;
+
+public class Program4 {
+
+	public static void main(String[] args) {
+		Program4 classObject=new Program4();
+		classObject.intValuesSum();
+	}
+	public void intValuesSum()
+	{
+		//sum of values in array without loop.
+		int intArray1[]=  {5,6,4,33}; 
+		System.out.println(intArray1[0]+intArray1[1]+intArray1[2]+intArray1[3]);
+		
+		//Program with  arrayIndexOutOfBound
+     //    System.out.println(intArray1[8]);
+		
+	}
+
+}

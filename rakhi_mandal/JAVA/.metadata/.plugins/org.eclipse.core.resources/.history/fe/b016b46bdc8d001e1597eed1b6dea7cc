@@ -1,0 +1,21 @@
+//Generic class
+package com.crnts.Generics;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		GenericClass genericClass=new GenericClass();
+		GenericClass<Integer> genericClass1=new GenericClass();
+		genericClass1.setId(8);
+		
+		GenericClass<String> genericClass2=new GenericClass();
+		genericClass2.setId("hh");
+		genericClass2.getId();
+		
+		
+		
+//		generalClass.setName("rakhi");  --------CTE when generic is set Integer
+   
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.crnts.List;
+
+import java.util.ArrayList;
+import java.util.List;
+
+ class Circle extends Shape{
+	void draw(){
+		 System.out.println("drawing circle");
+		}
+		}
+	

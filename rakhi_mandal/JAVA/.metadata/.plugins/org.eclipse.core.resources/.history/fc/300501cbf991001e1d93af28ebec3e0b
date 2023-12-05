@@ -1,0 +1,9 @@
+package com.crnts.List;
+
+public class Test {
+	public static void main(String[] args) {
+		String buffer=new String();
+		buffer.concat(false);
+		System.out.println(buffer);
+}
+}

@@ -1,0 +1,39 @@
+package com.crnts.Generics;
+
+public class Person implements Comparable<String> {
+
+       protected String name;
+       int age;
+       
+//       public final static int defaultDiscount=5;
+//       private static int defaultValue=10;
+       
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	public Person() {
+		//default
+	}
+	@Override
+	public int compareTo(String o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+       
+       
+
+}

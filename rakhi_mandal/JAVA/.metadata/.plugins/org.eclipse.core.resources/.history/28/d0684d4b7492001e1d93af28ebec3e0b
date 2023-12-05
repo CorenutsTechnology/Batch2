@@ -1,0 +1,36 @@
+package com.crnts.List.Assignment;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class PrimitiveToHashset {
+
+	public static void main(String[] args) {
+		PrimitiveToHashset primitiveToHashset=new PrimitiveToHashset();
+		primitiveToHashset.displayHasSet();
+	}
+	
+	public void displayHasSet()
+	{
+		HashSet<String> hasSet=new HashSet(); //sorts the inputs based on hash number   //accepts one null // no duplicates
+		hasSet.add("Zack");
+		hasSet.add("Rakhi");
+		hasSet.add("Monika");
+		hasSet.add("vaishali");
+		hasSet.add("shivani");
+		hasSet.add("kalyani");
+		hasSet.add("jack");
+		hasSet.add("kalyani");
+		hasSet.add("jack");
+		hasSet.add(null);
+//		hasSet.add(null);
+		
+		Iterator<String> listWithIterator=hasSet.iterator();
+		while(listWithIterator.hasNext())
+		{
+			System.out.println(listWithIterator.next()+" ");
+		}
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.crnts.exceptions;
+
+public class P7Exception implements ExceptionP7 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+	@Override
+	public void nullPointException() {
+
+		
+		try{String name=null;
+			System.out.println(name.length());
+		
+	}catch(NullPointerException e)
+	{
+		System.out.println("Exception handled");
+//		e.printStackTrace();
+	}
+	}
+
+	@Override
+	public void no_nullPointException() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

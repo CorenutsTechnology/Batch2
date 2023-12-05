@@ -1,0 +1,9 @@
+package com.crnts.List;
+
+public class ArrayToCollection {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

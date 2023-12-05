@@ -1,0 +1,19 @@
+package com.crnts.Generics;
+
+public class ChlidOfIGenericInterface<E> implements GenericInterface<E> {
+
+	public static void main(String[] args) {
+		ChlidOfIGenericInterface chlidOfIGenericInterface =new ChlidOfIGenericInterface();
+		chlidOfIGenericInterface.m1("rsakhi");
+	}
+
+	@Override
+	public Object m1(Object obj) {
+		// TODO Auto-generated method stub
+		return obj;
+	}
+
+	
+
+
+}

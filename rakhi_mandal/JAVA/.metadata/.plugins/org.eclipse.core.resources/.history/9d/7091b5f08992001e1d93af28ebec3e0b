@@ -1,0 +1,17 @@
+package com.crnts.List.Assignment;
+
+import java.util.TreeSet;
+
+import com.crnts.List.Student;
+
+public class StudentTestP5 {
+
+	
+	
+	public void student()
+	{   TreeSet<Student> set=new TreeSet<>();
+	set.add(new Student(1, "tom", "CBSE"));
+	set.add(new Student(2, "jack", "CBSE"));
+	set.add(new Student(3, "jakie", "Student"));
+	}
+}

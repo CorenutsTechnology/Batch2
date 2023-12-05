@@ -1,0 +1,7 @@
+//w I
+package com.crnts.solid;
+
+public interface Bird {
+	 public void fly();
+	 public void walk();
+}

@@ -1,0 +1,12 @@
+//w I
+package com.crnts.solid;
+
+public class Crow implements Bird{
+    public void fly(){ 
+    	System.out.println("can fly");
+    }
+    public void walk(){ 
+    	System.out.println("can walk");
+   }
+}
+    

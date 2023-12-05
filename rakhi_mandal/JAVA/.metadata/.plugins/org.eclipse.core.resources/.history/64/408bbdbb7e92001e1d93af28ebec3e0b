@@ -1,0 +1,30 @@
+package com.crnts.List.Assignment;
+
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+
+
+
+public class StudentInHashset {
+
+	public static void main(String[] args) {
+		StudentInHashset studentInHashset =new StudentInHashset();
+		studentInHashset.displayHasSet();
+	}
+	public void displayHasSet()
+	{
+		HashSet<Student> hasSet=new HashSet(); //sorts the inputs based on compareTo method in Student class
+		hasSet.add(new Student(1,"Rakhi","CBSE"));
+		hasSet.add(new Student(12,"Tom","ICSE"));
+		hasSet.add(new Student(88,"Jerry","CBSE"));
+	
+		
+		Iterator<Student> listWithIterator=hasSet.iterator();
+		while(listWithIterator.hasNext())
+		{
+			System.out.println(listWithIterator.next()+" ");
+		}
+	}
+
+}

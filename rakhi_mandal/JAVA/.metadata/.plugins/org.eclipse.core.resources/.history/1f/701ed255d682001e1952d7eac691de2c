@@ -1,0 +1,12 @@
+package assignment4_Loops;
+
+public class RandomValues {
+
+	public static void main(String[] args) {
+		for(int index=0;index<=25;index++)
+		{  int value1= (int) Math.random();
+     int value2= (int) Math.random();
+		}
+	}
+
+}

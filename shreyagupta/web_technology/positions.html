@@ -5,20 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Position</title>
     <style>
-        .box , .child{
+        .rel-box , .rel-child,
+        .ab-box , .ab-child,
+        .fix-box , .fix-child{
             width: 30%;
             height: 40px;
            
         }
-        .box{
+        .rel-box{
             background: rgb(140, 67, 208);
-            top: 92px;
-            left: 50px;
+            top: 295px;
+            left: 122px;
+            margin-left: 100px;
             position: relative;
         }
-        .child{
+        .rel-child{
             background: yellow;
             position: relative;
+            top: 0px;
+            left: 20px;
+        }
+        .ab-box{
+            background: rgb(79, 79, 191);
+            position: absolute;
+            top: 100px;
+            left: 356px;
+        }
+        .ab-child{
+            background: rgb(58, 234, 125);
+            position: absolute;
+            top: 0px;
+            left: 75px;
+        }
+        .fix-box{
+            background: rgb(255, 0, 238);
+            position:  fixed;
+            top: 125px;
+            left: 20px;
+        }
+        .fix-child{
+            background: rgb(255, 81, 0);
+            position: fixed;
             top: 0px;
             left: 20px;
         }
@@ -26,9 +53,51 @@
 </head>
 <body>
 
-    <div class="box">
-        <span>Relative position</span>
-        <div class="child"></div>
+    <div class="rel-box">
+        <span>Relative </span>
+        <div class="rel-child">Relative</div>
     </div>
+
+    <div class="ab-box">
+        <span>Absolute </span>
+        <div class="ab-child">Absolute</div>
+    </div>
+
+    <div class="fix-box">
+        <span>Fixed </span>
+        <div class="fix-child">Fixed</div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam tempora 
+        iusto ipsam vero, laudantium, odit, neque non accusamus nemo perspiciatis 
+        cumque et at obcaecati odio! Debitis quaerat assumenda hic distinctio. Lorem 
+        ipsum dolor sit amet consectetur, adipisicing elit. Labore vitae optio vero provident, 
+        necessitatibus qui exercitationem fugiat. Quis reprehenderit recusandae officiis quod sint
+         perspiciatis! Optio commodi exercitationem delectus fugit dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam tempora 
+            iusto ipsam vero, laudantium, odit, neque non accusamus nemo perspiciatis 
+            cumque et at obcaecati odio! Debitis quaerat assumenda hic distinctio. Lorem 
+            ipsum dolor sit amet consectetur, adipisicing elit. Labore vitae optio vero provident, 
+            necessitatibus qui exercitationem fugiat. Quis reprehenderit recusandae officiis quod sint
+             perspiciatis! Optio commodi exercitationem delectus fugit dolorum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam tempora 
+                iusto ipsam vero, laudantium, odit, neque non accusamus nemo perspiciatis 
+                cumque et at obcaecati odio! Debitis quaerat assumenda hic distinctio. Lorem 
+                ipsum dolor sit amet consectetur, adipisicing elit. Labore vitae optio vero provident, 
+                necessitatibus qui exercitationem fugiat. Quis reprehenderit recusandae officiis quod sint
+                 perspiciatis! Optio commodi exercitationem delectus fugit dolorum.</p>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam tempora 
+                    iusto ipsam vero, laudantium, odit, neque non accusamus nemo perspiciatis 
+                    cumque et at obcaecati odio! Debitis quaerat assumenda hic distinctio. Lorem 
+                    ipsum dolor sit amet consectetur, adipisicing elit. Labore vitae optio vero provident, 
+                    necessitatibus qui exercitationem fugiat. Quis reprehenderit recusandae officiis quod sint
+                     perspiciatis! Optio commodi exercitationem delectus fugit dolorum.</p>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam tempora 
+                        iusto ipsam vero, laudantium, odit, neque non accusamus nemo perspiciatis 
+                        cumque et at obcaecati odio! Debitis quaerat assumenda hic distinctio. Lorem 
+                        ipsum dolor sit amet consectetur, adipisicing elit. Labore vitae optio vero provident, 
+                        necessitatibus qui exercitationem fugiat. Quis reprehenderit recusandae officiis quod sint
+                         perspiciatis! Optio commodi exercitationem delectus fugit dolorum.</p>
 </body>
+
 </html>

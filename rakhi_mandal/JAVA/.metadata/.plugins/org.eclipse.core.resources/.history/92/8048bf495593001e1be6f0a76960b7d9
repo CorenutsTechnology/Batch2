@@ -1,0 +1,23 @@
+//Write a program to show the behavior of HashMap using different ways of iterations?
+package com.crnts.map;
+
+import java.util.HashMap;
+
+public class Has_Map {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void hasMap()
+	{
+		HashMap<Integer, String> hash=new HashMap();
+		hash.put(1, "Jack");
+		hash.put(11, "Abhi");
+		hash.put(3, "Zoe");
+		hash.put(20, "Daniel");
+		
+		
+	}
+
+}

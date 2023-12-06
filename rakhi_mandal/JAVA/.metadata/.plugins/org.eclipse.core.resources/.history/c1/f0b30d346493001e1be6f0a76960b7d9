@@ -1,0 +1,27 @@
+package com.crnts.map;
+
+import java.util.TreeMap;
+
+public  class TreeMapEmployeeTest {
+
+	public static void main(String[] args) {
+		TreeMapEmployeeTest test =new TreeMapEmployeeTest();
+		test.showEmployees();
+	}
+	public void showEmployees()
+	{
+		 TreeMap<Integer,Employee_P6> map = new TreeMap<>();
+		 map.put(101,new Employee_P6(1, "tom", "Developer","Pune"));
+		 map.put(109,new Employee_P6(12, "jack", "Tester","Goa"));
+		 map.put(107,new Employee_P6(4, "tom", "Developer","Delhi"));
+		 map.put(102,new Employee_P6(8, "tom", "Developer","Pune"));
+		 map.put(105,new Employee_P6(8, "tom", "Developer","Pune"));
+		 map.put(109,new Employee_P6(8, "tom", "Developer","Pune"));
+		
+			
+		 for (Integer key : map.keySet()) {
+	            System.out.println("Key: " + key + ", Value: " + map.get(key));
+	        }
+	}
+
+}

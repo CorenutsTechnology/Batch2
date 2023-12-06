@@ -1,0 +1,25 @@
+//Write a program to use Employee object as a key in the HashMap.
+package com.crnts.map;
+
+import java.util.HashMap;
+
+import com.crnts.List.Student;
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void entries()
+	{
+		HashMap<Employee, String> hash=new HashMap();
+		hash.put(new Employee(1,34898.9), "Zoe");
+//		hash.put(20, "Daniel");
+//		hash.put(1, "Jack");
+//		hash.put(11, "Abhi");
+//		
+//	   System.out.println(hash.entrySet());
+	}
+
+}

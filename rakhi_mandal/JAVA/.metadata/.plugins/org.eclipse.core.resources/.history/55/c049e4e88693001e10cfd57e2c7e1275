@@ -1,0 +1,22 @@
+package com.crnts.threads;
+
+public class SingleThreads extends Thread {
+	
+	public SingleThreads()
+	{
+		super();
+	}
+	
+	public SingleThreads(String name)
+	{
+		super(name);
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+	}
+	
+ 
+}

@@ -1,0 +1,14 @@
+package com.crnts.threads;
+
+public class SingleThreadTest {
+
+	public static void main(String[] args) {
+		System.out.println(Thread.currentThread().getName());
+		SingleThreads thread1 =new SingleThreads();
+		SingleThreads thread2 =new SingleThreads();
+		thread1.start();
+		thread2.start();
+		
+	}
+
+}

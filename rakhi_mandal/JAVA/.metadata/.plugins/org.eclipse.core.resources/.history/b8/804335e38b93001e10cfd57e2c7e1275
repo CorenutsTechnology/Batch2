@@ -1,0 +1,18 @@
+package com.crnts.threads;
+
+public class Task1 implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		for(int index= 0;index<5;index++)
+		{
+			System.out.println(Thread.currentThread().getName()+" job started");
+		}
+		
+		
+		
+		
+	}
+
+}

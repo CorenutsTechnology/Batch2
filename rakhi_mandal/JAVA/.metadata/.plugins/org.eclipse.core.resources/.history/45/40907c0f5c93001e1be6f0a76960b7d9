@@ -1,0 +1,53 @@
+package com.crnts.map;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class HashDifferences {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void hasMap()
+	{
+		HashMap<Integer, String> hash=new HashMap();
+		hash.put(1, "Jack");
+		hash.put(11, "Abhi");
+		hash.put(3, "Zoe");
+		hash.put(20, "Daniel");
+		hash.put(20, "Daniel");
+		hash.put(20, "Daniel");
+		
+		for(Map.Entry<Integer,String >entry:hash.entrySet())
+		{
+			Integer key=entry.getKey();
+			String names=entry.getValue();
+			System.out.println("Key : "+key+" Names : "+names);
+		}
+	}
+	
+	public void linkedHasMap()
+	{
+		LinkedHashMap<Integer, String> hash=new LinkedHashMap();
+		hash.put(1, "Jack");
+		hash.put(11, "Abhi");
+		hash.put(3, "Zoe");
+		hash.put(20, "Daniel");
+		hash.put(2, "Tom");
+		hash.put(5, "Jerry");
+		hash.put(20, "Daniel");
+		hash.put(2, "Tom");
+		hash.put(5, "Jerry");
+		
+		for(Integer key:hash.keySet())
+		{
+			String names=hash.get(key);
+			
+			System.out.println("Key : "+key+" Names : "+names);
+		}
+	}
+
+}

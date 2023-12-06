@@ -1,0 +1,36 @@
+//Write a program to show the behavior of HashMap using different ways of iterations?
+package com.crnts.map;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class Has_Map {
+
+	public static void main(String[] args) {
+		Has_Map map =new Has_Map();
+		map.iterator();
+	}
+	public void iterator()
+	{
+		HashMap<Integer, String> hash=new HashMap();
+		hash.put(1, "Jack");
+		hash.put(11, "Abhi");
+		hash.put(3, "Zoe");
+		hash.put(20, "Daniel");
+		
+		
+		
+		Iterator<Map.Entry<Integer,String >> show=hash.entrySet().iterator();
+		while(show.hasNext())
+		{
+			Map.Entry<Integer,String> entry=show.next();
+			Integer key=entry.getKey();
+			String names=entry.getValue();
+			System.out.println("Key : "+key+" Names : "+names);
+		}
+		
+		
+	}
+
+}

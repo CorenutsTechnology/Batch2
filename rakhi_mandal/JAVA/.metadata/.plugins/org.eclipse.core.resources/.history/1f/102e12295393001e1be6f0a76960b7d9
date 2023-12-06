@@ -1,0 +1,15 @@
+//Write a program to show the behavior of HashMap using different ways of iterations?
+package com.crnts.map;
+
+public class HashMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void hashMap()
+	{
+		HashMap map=new HashMap();
+	}
+
+}

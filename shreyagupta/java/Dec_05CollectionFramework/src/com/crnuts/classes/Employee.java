@@ -3,17 +3,34 @@ package com.crnuts.classes;
 import java.util.Comparator;
 import java.util.Objects;
 
-public class Employee  {
+public class Employee implements Comparator<Employee> {
 
 	private int eid;
 	private String ename;
 	private double sal;
-
+	private String location;
+	
 	public Employee(int eid, String ename, double sal) {
 
 		this.eid = eid;
 		this.ename = ename;
 		this.sal = sal;
+	}
+
+	public Employee(int eid, String ename, double sal, String location) {
+
+		this.eid = eid;
+		this.ename = ename;
+		this.sal = sal;
+		this.location = location;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
 	}
 
 	
@@ -44,7 +61,7 @@ public class Employee  {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(eid, ename, sal);
+		return Objects.hash(ename);
 	}
 
 	@Override
@@ -56,21 +73,28 @@ public class Employee  {
 		if (getClass() != obj.getClass())
 			return false;
 		Employee other = (Employee) obj;
-		return eid == other.eid && Objects.equals(ename, other.ename)
-				&& Double.doubleToLongBits(sal) == Double.doubleToLongBits(other.sal);
+		return Objects.equals(ename, other.ename) || Objects.equals(location, other.location);
 	}
-
-
 
 	@Override
 	public String toString() {
-		return "Employee [eid=" + eid + ", ename=" + ename + ", sal=" + sal + "]";
+		return "Employee [eid=" + eid + ", ename=" + ename + ", sal=" + sal + ", location=" + location + "]";
 	}
 
-
-
 	
 
-
+//	@Override
+//	public int compare(Employee o1, Employee o2) {
+//		// TODO Auto-generated method stub
+//		return o1.ename.compareTo(o2.ename);
+//	}
 	
+	@Override
+	public int compare(Employee o1, Employee o2) {
+		// TODO Auto-generated method stub
+		return o1.location.compareTo(o2.location);
+	}
+	
+	
+
 }

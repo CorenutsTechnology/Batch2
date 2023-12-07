@@ -1,0 +1,36 @@
+//show the behavior of thread by influencing thread functions (sleep, join, yield)
+package com.crnts.thread_2;
+
+public class ThreadBehaviour {
+
+	public static void main(String[] args) {
+		ThreadBehaviour threadBehaviour =new ThreadBehaviour();
+//		threadBehaviour.sleepThread();
+		threadBehaviour.joinThread();
+	}
+	public void sleepThread()
+	{
+		ThreadBehaviour_P4 thread=new ThreadBehaviour_P4("first thread");
+		try {
+			thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		thread.start();
+	}
+	
+	public void joinThread()
+	{
+		ThreadBehaviour_P4 thread=new ThreadBehaviour_P4("first thread");
+		try {
+			thread.yield();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		thread.start();
+	}
+	}
+
+

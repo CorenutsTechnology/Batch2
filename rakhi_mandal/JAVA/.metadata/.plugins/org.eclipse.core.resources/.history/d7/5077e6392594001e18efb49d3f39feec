@@ -1,0 +1,52 @@
+//1. Write a program to find the count of each word in a given String value.
+//String str = "Core nuts technologies located in Bangalore Core nuts technologies
+//		located in hyderabad Core nuts technologies in Hyderabad Core nuts technologies in
+//		Bangalore";
+package com.crnts.map_2;
+
+public class Find_count {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Find_count find_count=new Find_count();
+		find_count.coutWords();
+
+	}
+	
+	public void coutWords()
+	{
+		String str = "Core nuts technologies located in Bangalore Core nuts technologies located in hyderabad Core nuts technologies in Hyderabad Core nuts technologies in Bangalore";
+		String [] strArray=str.split(" ");
+		System.out.println(strArray[8]);
+	}
+	
+	void countChars()
+	{
+		String name="Corebbmbsss";
+		
+		String distinct="";
+		
+		for(int index=0;index<name.length();index++)     //occurrences
+		{
+			char characters=name.charAt(index);
+		if(!distinct.contains(characters+""))
+				{
+					distinct+=characters;
+				}
+				
+			}
+		for(int index=0;index<distinct.length();index++) 
+		{   int c=0;
+			for(int index1=0;index1<name.length();index1++) 
+			{
+				if(distinct.charAt(index)==name.charAt(index1))
+						{
+					      c++;
+						}
+			}System.out.println(distinct.charAt(index)+"--->"+c);
+		}
+		
+			
+		}
+
+}

@@ -1,0 +1,17 @@
+package com.crnts.map_2;
+
+public class CreateThread extends Thread {
+	
+	public CreateThread()
+	{
+		super();
+	}
+	
+	public CreateThread(String name)
+	{
+		super(name);
+	}
+
+	
+
+}

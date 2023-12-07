@@ -1,0 +1,40 @@
+//1. Write a program to find the count of each word in a given String value.
+//String str = "Core nuts technologies located in Bangalore Core nuts technologies
+//		located in hyderabad Core nuts technologies in Hyderabad Core nuts technologies in
+//		Bangalore";
+package com.crnts.map_2;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Find_count {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Find_count find_count = new Find_count();
+		find_count.coutWords();
+
+	}
+
+	public void coutWords() {
+		String str = "Core nuts technologies located in Bangalore Core nuts technologies located in hyderabad Core nuts technologies in Hyderabad Core nuts technologies in Bangalore";
+		String[] strArray = str.split(" ");
+//		System.out.println(strArray[8]);
+		Map<String, Integer> map = new HashMap<>();
+		int temp = 0;
+		for (String e : strArray) {
+			if (map.containsKey(e)) {
+				temp = map.get(e);
+				temp++;
+				map.put(e, temp);
+			} else {
+				map.put(e, 1);
+			}
+			System.out.println(e +"---->"+temp);
+		}
+
+	}
+
+}

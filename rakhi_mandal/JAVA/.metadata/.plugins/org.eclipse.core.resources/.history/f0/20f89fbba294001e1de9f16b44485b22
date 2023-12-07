@@ -1,0 +1,10 @@
+package com.crnts.thread_2;
+import java.util.concurrent.Executors;
+
+public class ScheduledExecutor {
+
+	public static void main(String[] args) {
+		ScheduledExecutorService scheduledThreadPool= Executors.newScheduledThreadPool(5);
+			}
+
+}

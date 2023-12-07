@@ -41,7 +41,7 @@ public class Task1 implements Runnable {
 		}
 		
 	}
-	public static  void  customLogic()
+	public  synchronized  void  customLogic()
 	{
 		for(int index=0;index<5;index++)
 		{

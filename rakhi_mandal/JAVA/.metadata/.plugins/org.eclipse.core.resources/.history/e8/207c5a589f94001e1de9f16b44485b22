@@ -1,0 +1,19 @@
+package com.crnts.map;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BatchesTest {
+	
+	public void displayBatch()
+	{
+	List<Batches> empList = new ArrayList<>();
+	
+	empList.add(new Batches(1,"Tom","Batch-1"));
+	empList.add(new Batches(2,"Jack","Batch-2"));
+	empList.add(new Batches(4,"Abhi","Batch-2"));
+	empList.add(new Batches(3,"Neil","Batch-1"));
+	empList.add(new Batches(8,"Zoe","Batch-1"));
+	
+	}
+}

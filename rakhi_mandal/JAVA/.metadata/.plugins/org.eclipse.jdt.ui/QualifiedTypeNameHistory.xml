@@ -43,4 +43,8 @@
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
     <fullyQualifiedTypeName name="com.crnts.map.TreeMapEmployeeTest"/>
+    <fullyQualifiedTypeName name="com.crnts.map.Employee_P6"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="com.crnts.propertiesClass.Student"/>
 </qualifiedTypeNameHistroy>

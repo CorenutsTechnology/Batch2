@@ -1,0 +1,14 @@
+package com.crnts.propertiesClass;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class Properties_Test {
+
+	public static void main(String[] args) {
+		Properties properties=new Properties();
+//		properties.load(null); CTE
+		properties.put(new Student, properties);
+	}
+
+}

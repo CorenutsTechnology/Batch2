@@ -6,8 +6,8 @@ public class SingleThreadTest {
 		System.out.println(Thread.currentThread().getName());
 		SingleThreads thread1 =new SingleThreads("first thread");
 		SingleThreads thread2 =new SingleThreads(); //thread name not given
-		thread1.start();
-		thread2.start();
+//		thread1.start();
+//		thread2.start();
 		
 //		Thread first =new Thread(new Task1());
 //		first.start();

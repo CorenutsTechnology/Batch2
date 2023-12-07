@@ -1,0 +1,18 @@
+package com.crnts.thread_2;
+
+public class Synchronized_NonSynchronized_Test {
+
+	public static void main(String[] args) {
+		Synchronized_NonSynchronized_Test test=new Synchronized_NonSynchronized_Test();
+		test.threadShow();
+	}
+	public void threadShow()
+	{
+		 Thread first =new Thread(new Synchronized_NonSynchronized());
+		 Thread second =new Thread(new Synchronized_NonSynchronized());
+			
+			first.start();
+			second.start();
+	}
+
+}

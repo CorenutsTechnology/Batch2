@@ -1,0 +1,21 @@
+//show the behavior of thread by influencing thread functions (sleep, join, yield)
+package com.crnts.thread_2;
+
+public class ThreadBehaviour_P4 extends Thread {
+	public ThreadBehaviour_P4()
+	{
+		super();
+	}
+	
+	@Override
+	public   void run () {
+		System.out.println(Thread.currentThread().getName()+" job started");
+		
+		try {
+			Thread.sleep(20000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,10 @@
+package com.crnts.thread_2;
+
+public class CommunicationTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

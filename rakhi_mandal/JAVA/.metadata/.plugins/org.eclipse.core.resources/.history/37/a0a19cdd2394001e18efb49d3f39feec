@@ -1,0 +1,20 @@
+//1. Write a program to find the count of each word in a given String value.
+//String str = "Core nuts technologies located in Bangalore Core nuts technologies
+//		located in hyderabad Core nuts technologies in Hyderabad Core nuts technologies in
+//		Bangalore";
+package com.crnts.map_2;
+
+public class Find_count {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void coutWords()
+	{
+		String str = "Core nuts technologies located in Bangalore Core nuts technologies located in hyderabad Core nuts technologies in Hyderabad Core nuts technologies in Bangalore";
+		
+	}
+
+}

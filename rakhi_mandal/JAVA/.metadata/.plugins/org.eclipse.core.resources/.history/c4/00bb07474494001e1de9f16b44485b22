@@ -1,0 +1,11 @@
+//show the behavior of thread by influencing thread functions (sleep, join, yield)
+package com.crnts.thread_2;
+
+public class ThreadBehaviour {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

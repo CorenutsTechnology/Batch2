@@ -1,0 +1,22 @@
+package com.crnts.map_2;
+
+
+public class CreateThreadTest {
+
+	public static void main(String[] args) {
+		
+		
+//		Thread first =new Thread(new Task1());
+//		first.start();
+	}
+	public void usingThreadClass()
+	{
+		System.out.println(Thread.currentThread().getName());
+		CreateThread thread1 =new CreateThread("first thread");
+		CreateThread thread2 =new CreateThread(); //thread name not given
+		thread1.start();
+		thread2.start();
+		
+	}
+
+}

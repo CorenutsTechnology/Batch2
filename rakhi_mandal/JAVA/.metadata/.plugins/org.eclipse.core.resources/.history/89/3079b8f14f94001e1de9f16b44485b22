@@ -1,0 +1,30 @@
+package com.crnts.thread_2;
+
+public class Synchronized_NonSynchronized implements Runnable {
+
+	public Synchronized_NonSynchronized() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+  
+	@Override
+	public void run() {
+		for(int index= 0;index<5;index++)
+		{  
+			System.out.println(Thread.currentThread().getName()+" job started");
+			
+		}
+	}
+		
+		public void custom() {
+			for(int index= 0;index<5;index++)
+			{  
+				System.out.println(Thread.currentThread().getName()+" job started");
+				
+			}
+		
+	
+	}
+	
+  
+}

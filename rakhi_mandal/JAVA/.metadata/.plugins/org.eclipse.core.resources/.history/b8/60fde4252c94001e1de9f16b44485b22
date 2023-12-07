@@ -1,0 +1,10 @@
+package com.crnts.map_2;
+
+public class CreateThread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

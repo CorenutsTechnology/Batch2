@@ -10,7 +10,7 @@ public class Synchronized_NonSynchronized_Test {
 
 	public void threadShow() {
 		Synchronized_NonSynchronized thread = new Synchronized_NonSynchronized();
-		new Thread(thread, "one").start();
+//		new Thread(thread, "one").start();
 
 		Thread thread1 = new Thread(new Runnable() {
 
@@ -22,6 +22,17 @@ public class Synchronized_NonSynchronized_Test {
 		});
 
 		thread1.start();
+		
+		Thread thread2 = new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				thread.custom();
+				thread.custom2();
+			}
+		});
+
+		thread2.start();
 
 	}
 

@@ -1,0 +1,21 @@
+package com.crnts.FuntionalInterface;
+
+import java.util.function.Predicate;
+
+public class CheckEvenWithPredicete {
+  public static void main(String[] args) {
+	  CheckEvenWithPredicete check=new CheckEvenWithPredicete();
+	  check.evenValues();
+	
+}
+  public void evenValues()
+  {
+	  Predicate<Integer> even=(num)->{
+		  if(num%2==0)
+				return true;
+				else
+				  return false;
+		  
+	  };System.out.println(even.test(101));
+  }
+}

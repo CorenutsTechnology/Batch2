@@ -1,0 +1,33 @@
+package com.crnts.FuntionalInterface;
+
+import java.util.function.BiConsumer;
+import java.util.function.Predicate;
+
+public class CheckEvenWithPredicete {
+  public static void main(String[] args) {
+	  CheckEvenWithPredicete check=new CheckEvenWithPredicete();
+	  System.out.println("-----------Predicate-------------");
+	  check.evenValues();
+	  System.out.println("-----------BiConsumer-------------");
+	  check.addValues();
+	
+}
+  public void evenValues()
+  {
+	  Predicate<Integer> even=(num)->{
+		  if(num%2==0)
+				return true;
+				else
+				  return false;
+		  
+	  };System.out.println(even.test(101));
+  }
+  public void addValues()
+  {
+	  BiConsumer<Integer,Integer> add=(num1,num2)->{
+		  int result =num1+num2;
+		  System.out.println(result);
+			
+	  };add.accept(10, 23);
+  }
+}

@@ -1,0 +1,23 @@
+package com.crnts.FunctionalInterfaceAssignment;
+
+import java.util.ArrayList;
+import java.util.function.BiFunction;
+
+public class ListOfStrings {
+
+	
+	public static void main(String[] args) {
+		ArrayList<String>array =new ArrayList();
+		array.add("adam");
+		array.add("jack");
+		array.add("joe");
+		array.add("tom");
+	
+     BiFunction<ArrayList,String,Boolean> bi=(array1,name)->{
+    	 
+    	 boolean bool=array.contains(name);
+			return bool;
+	};System.out.println(bi.apply(array, "jack"));
+	
+}
+	}

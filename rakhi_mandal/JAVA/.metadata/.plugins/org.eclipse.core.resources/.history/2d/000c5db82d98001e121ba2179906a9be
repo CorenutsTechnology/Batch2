@@ -1,0 +1,16 @@
+package com.crnts.FunctionalInterfaceAssignment;
+
+import java.util.function.Supplier;
+
+public class CarTest {
+
+	public static void main(String[] args) {
+		
+		Supplier<String> word=Car::getName;
+		  ;System.out.println(word.get());
+}
+		
+	}
+
+
+

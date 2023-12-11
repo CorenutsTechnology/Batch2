@@ -1,0 +1,19 @@
+package com.crnts.FuntionalInterface;
+
+public class VerifyEvenClass implements VerifyEven {
+
+	public static void main(String[] args) {
+		VerifyEvenClass check=new VerifyEvenClass();
+		System.out.println(check.checkIfEven(4));
+		
+	}
+
+	@Override
+	public boolean checkIfEven(int value) {
+		if(value%2==0)
+		return true;
+		else
+		  return false;
+	}
+
+}

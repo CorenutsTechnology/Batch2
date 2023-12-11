@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+   <fieldset>
+   <legend>Enter details</legend>
+  <form action="" method="post">
+    <table>
+      <tr>
+        <td><label for="uname" >Name</label></td>
+        <td><input name="uname" required type="text" placeholder="Enter your name"></td>
+      </tr>
+
+      <tr>
+        <td><label for="pass">Password</label></td>
+        <td><input name="pass" type="password" placeholder="Enter your password"></td>
+      </tr>
+
+      <tr>
+        <td><label for="phone">Contact</label></td>
+        <td><input name="phone" type="tel" placeholder="Enter your contact"></td>
+      </tr>
+
+      <tr>
+        <td><label for="course">Courses</label></td>
+        <td><input name="course" type="checkbox">Java <input name="course" type="checkbox">Web Tech</td>
+      </tr>
+    <tr><td>DOB</td><td><input type="date" name="" id=""></td></tr>
+      <tr>
+        <td><label for="gen">Gender</label></td>
+        <td><input name="gen" type="radio">Female <input name="gen" type="radio">Male</td>
+      </tr>
+
+     
+      <tr>
+        <td><label for="state">State</label></td>
+        <td><select name="state" id="">
+            <option value="odisha">Odisha</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="assam">Assam</option>
+        </select></td>
+      </tr>
+
+      <tr>
+        <td><label for="state">State</label></td>
+        <td><select name="state" id="" multiple>
+            <option value="odisha">Odisha</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="assam">Assam</option>
+        </select></td>
+      </tr>
+
+      <tr>
+        <td><label for="hobbies">Hobbies</label></td>
+        <td>
+            <input list="list">
+            <datalist id="list">
+             <option value="painting">Painting</option>
+            <option value="dance">Dance</option>
+            <option value="sing">Singing</option>
+       
+        </datalist>
+        </td>
+      </tr>
+      <tr><td>Enter the range</td><td><input type="range" max="78"></td></tr>
+      <tr>
+        <td><label for="address">FeedBack</label></td>
+        <td><textarea name="" id="" cols="30" rows="6"></textarea></td>
+      </tr>
+      <tr><td></td><td><input type="submit" value="Submit"> &nbsp;
+        <input type="reset" value="Reset"></td></tr>
+    </table>
+  </form>  
+</fieldset> 
+</body>
+</html>

@@ -1,0 +1,15 @@
+package com.crnts.FunctionalInterfaceAssignment;
+
+import java.util.function.Predicate;
+
+public class CarTest {
+
+	public static void main(String[] args) {
+		Car car=new Car();
+		Predicate<Car> word=(e1)->{
+			return word.car::displayName();
+		  };System.out.println(word.test(car));
+		
+	}
+
+}

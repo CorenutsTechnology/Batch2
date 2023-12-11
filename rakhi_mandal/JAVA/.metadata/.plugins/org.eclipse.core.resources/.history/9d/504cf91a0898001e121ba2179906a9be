@@ -1,0 +1,45 @@
+package com.crnts.FunctionalInterfaceAssignment;
+
+import java.util.function.Supplier;
+
+public class SumOfPrime {
+     public static void main(String[] args) {
+    	    
+    	  Supplier<Integer> loop=()->{ int sum=0;
+    		  for(int index=0;index<=10;index++)
+    				{   if(prime(index))
+    				{  sum+=index;
+    				System.out.println(sum);
+    				}
+    				}
+    					
+    				}
+    		  return 0;
+    		 
+    		
+    			
+    	  };loop.get();
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+		
+	}
+     
+     public static boolean prime(int n)
+ 	{
+ 	  int c=0;
+ 	  for(int i=1;i<=n;i++)
+ 	  {
+ 		  if(n%i==0)
+ 		  {  c++;
+ 		  }
+ 		  } return c==2;
+ 	  }
+}

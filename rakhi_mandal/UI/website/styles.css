@@ -1,0 +1,126 @@
+*{
+    margin: 0%;
+    /* overflow-x: hidden; */
+}
+body
+{  
+    background: linear-gradient(90deg, rgba(51,38,60,1) 10%, rgba(80,156,193,1) 53%, rgba(69,252,213,1) 100%, rgba(29,253,205,1) 100%);
+}
+.navOptns,.footOptn{
+   float: left;
+   padding-right: 5.3rem;
+   padding-top: 0.8rem;
+   list-style: none;
+   
+}
+.footOptn{
+   position: relative;
+   padding-right: 3rem;
+   left: 88%;
+   top: -28px;
+}
+.navOptns1{
+    float: left;
+    position: relative;
+    left: 27%;
+    padding-left: 2.3rem;
+    padding-top: 0.8rem;
+    list-style: none;
+ }
+
+nav,nav>ul{
+    background: linear-gradient(90deg, rgba(51,38,60,1) 10%, rgba(80,156,193,1) 53%, rgba(69,252,213,1) 100%, rgba(29,253,205,1) 100%);
+    
+    border-bottom: 2px solid rgb(250, 247, 247);
+    height: 3rem;
+    width: 100%;
+    z-index: 1;
+   
+    
+}
+/* nav{
+     width: 100%; 
+ } */
+/* nav>ul{
+    background: linear-gradient(90deg, rgba(51,38,60,1) 10%, rgba(80,156,193,1) 53%, rgba(69,252,213,1) 100%, rgba(29,253,205,1) 100%);
+   width: 100%;
+     position: fixed;
+     height: 3rem;
+} */
+
+nav ul li>ul{
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.webs,.spot
+{    list-style: none;
+    color: white;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom:   3px solid white;
+    /* padding: 0.5rem; */
+    padding-top: 1.7rem;
+    display: none;
+}
+.navOptns:hover .webs{
+    display: block;
+}
+.navOptns:hover .spot{
+    display: block;
+}
+#sec1{
+   background-color: #000;
+  color: #fff;
+  opacity: .4;
+    height: 25rem;
+    width: 50rem;
+   border-radius: 100px ;
+    position: relative;
+    top: 10rem;
+    left: 25%;
+}
+#sec1 h1{
+    position: absolute;
+    top: 10rem;
+    left: 20%;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sec1 p{
+    position: absolute;
+    top: 8rem;
+    left: 20%;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+footer{
+    position: relative;
+    top: 236px;
+    height: 4rem;
+    background-color: #000;
+}
+footer>p{
+    color: #fff;
+    padding-left: 43%;
+    font-family: cursive;
+    font-size: 20px;
+    position: relative;
+   
+}
+
+.fa-facebook:hover{
+    color: rgb(15, 142, 253);
+
+}
+.fa-instagram:hover{
+    color: rgb(253, 15, 98);
+
+}
+
+

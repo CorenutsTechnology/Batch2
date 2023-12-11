@@ -1,0 +1,26 @@
+package com.crnts.FunctionalInterfaceAssignment;
+
+import java.util.function.Predicate;
+
+public class PalindromeString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void checkPalindrome()
+	{
+		String checkString="rakhi";
+		String rev="";
+		 Predicate<String> even=(e1)->{
+			for(int index=checkString.length()-1;index>0;index--)
+			 {  rev=rev+checkString.charAt(index);
+			  if(checkString.equalsIgnoreCase(rev))
+					return true;
+					else
+					  return false;
+			 }
+		  });System.out.println(even.test("rakhi"));
+	}
+
+}

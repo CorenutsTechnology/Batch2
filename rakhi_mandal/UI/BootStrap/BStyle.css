@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+nav{
+background-color: rgb(157, 73, 236);
+height: 50px;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    float: left;
+    padding-left: 7rem;
+    padding-top: 1rem;
+}
+#icon{
+    height: 30px;
+}
+div{
+    height: 700px;
+}
+.left{
+    position: fixed;
+    top: 3.2rem;
+    left: 1rem;
+    height: inherit;
+    width: 400px;
+    border: 2px solid;
+    overflow-y: auto;
+}

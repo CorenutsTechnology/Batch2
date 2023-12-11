@@ -1,0 +1,42 @@
+package com.crnts.FuntionalInterface;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import com.crnts.List.User;
+
+public class ComparatorCheck {
+	
+  public static void main(String[] args) {
+	  List<User> list = new ArrayList<>();
+		list.add(new User(1,"rakhi",2002));
+		list.add(new User(12,"neha",2018));
+		list.add(new User(3,"tom",2008));
+		list.add(new User(14,"abhi",2006));
+		
+		Comparator c=( o1,  o2)-> {
+			// TODO Auto-generated method stub
+			return ((User) o1).getUserId()-((User) o2).getUserId();
+		};
+		
+		Collections.sort(list, c);
+		
+		
+//		Comparator names=( o1, o2)->
+//		  {
+//				int id=this.userId.compareTo(u.userId());
+//				if(id==1)
+//				{
+//					return -1;
+//				}
+//				if(id==-1)
+//				{
+//					return 1;
+//				}
+//				return 0;
+//			
+//		  };names.compare();
+}
+}

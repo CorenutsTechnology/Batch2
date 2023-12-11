@@ -1,0 +1,13 @@
+package com.crnts.FunctionalInterfaceAssignment;
+
+public class ListOfStrings {
+
+	
+	public static void main(String[] args) {
+		ArrayList<String>array =new ArrayList();
+		array.add("adam");
+		array.add("jack");
+		array.add("joe");
+		array.add("tom");
+	}
+}

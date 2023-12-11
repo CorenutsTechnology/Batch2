@@ -1,0 +1,12 @@
+package com.crnts.FunctionalInterfaceAssignment;
+
+public class Car {
+   static String name="Thar";
+
+public static String getName() {
+	return name;
+}
+
+
+  
+}

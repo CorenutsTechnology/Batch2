@@ -1,0 +1,8 @@
+package com.crnts.FunctionalInterfaceAssignment;
+
+public class Car {
+   public static void displayName()
+   {
+	   System.out.println("Thar");
+   }
+}

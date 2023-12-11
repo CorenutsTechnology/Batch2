@@ -1,0 +1,14 @@
+package com.crnts.FunctionalInterfaceAssignment;
+
+import java.util.function.Supplier;
+
+public class CalculatorTest {
+
+	public static void main(String[] args) {
+		Calculator calculator =new Calculator();
+		Supplier<Integer> add=calculator::sum();
+		  ;System.out.println(add.get(9,0));
+
+	}
+
+}

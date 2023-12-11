@@ -1,0 +1,8 @@
+package com.crnts.FunctionalInterfaceAssignment;
+
+public interface EmployeeInterface {
+  String name="rakhi";
+  
+  void display();
+ 
+}

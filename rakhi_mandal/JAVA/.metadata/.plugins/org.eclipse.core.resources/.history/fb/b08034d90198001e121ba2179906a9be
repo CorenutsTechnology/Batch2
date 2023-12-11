@@ -1,0 +1,13 @@
+package com.crnts.MethodReference;
+
+public class MethodReferenceClassMain  {
+
+	public static void main(String[] args) {
+		MethodRefernceInterface m=(e1,e2)->{
+			return e1+e2;
+		};
+	}
+	
+	
+
+}

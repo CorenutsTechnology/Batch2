@@ -1,0 +1,9 @@
+package com.crnts.FuntionalInterface;
+
+import java.util.function.Predicate;
+
+public class CheckEvenWithPredicete {
+  public static void main(String[] args) {
+	Predicate<T> even= 
+}
+}

@@ -1,0 +1,14 @@
+package com.crnts.FunctionalInterfaceAssignment;
+
+public interface EmployeeInterface {
+  String name="rakhi";
+  
+  public void setName(String name) {
+		this.name = name;
+	}
+
+  public int getName() {
+		return name;
+	}
+ 
+}

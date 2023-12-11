@@ -1,0 +1,23 @@
+package com.crnts.FuntionalInterface;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+import com.crnts.List.User;
+
+public class Comparator {
+	
+  public static void main(String[] args) {
+	  List<User> list = new ArrayList<>();
+		list.add(new User(1,"rakhi",2002));
+		list.add(new User(12,"neha",2018));
+		list.add(new User(3,"tom",2008));
+		list.add(new User(14,"abhi",2006));
+		
+		Comparator names=( o1, o2)->
+		  {
+			  return o1.getUserId()-o2.getUserId();
+		  };names.compare(  o1, o2);
+}
+}

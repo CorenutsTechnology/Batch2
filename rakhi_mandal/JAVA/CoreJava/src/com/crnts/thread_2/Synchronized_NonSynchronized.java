@@ -9,7 +9,7 @@ public class Synchronized_NonSynchronized implements Runnable {
 	}
   
 	@Override
-	public  synchronized void run() {
+	public   void run() {
 		for(int index= 0;index<5;index++)
 		{  
 			System.out.println(Thread.currentThread().getName()+" job started");
@@ -18,7 +18,7 @@ public class Synchronized_NonSynchronized implements Runnable {
 		}
 	}
 		
-		public synchronized void custom() {
+		public  void custom() {
 			for(int index= 0;index<5;index++)
 			{  
 				System.out.println(Thread.currentThread().getName()+" job custom1");

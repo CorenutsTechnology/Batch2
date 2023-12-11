@@ -23,7 +23,7 @@ public class StudentTest {
 		students.add(student3);
 		students.add(student4);
 
-		System.out.println("shorting based on first name");
+		System.out.println("shorting based on student's first name :");
 		Comparator firstName = (s1, s2) -> {
 			return ((Student) s1).getFirstName().compareTo(((Student) s2).getFirstName());
 		};
@@ -34,7 +34,7 @@ public class StudentTest {
 		}
 
 		System.out.println("\n");
-		System.out.println("shorting based on last name");
+		System.out.println("shorting based on student's last name :");
 
 		Comparator lastName = (o1, o2) -> {
 			return ((Student) o1).getLastName().compareTo(((Student) o2).getLastName());
@@ -47,7 +47,7 @@ public class StudentTest {
 		}
 		
 		System.out.println("\n");
-		System.out.println("shorting based on mother name");
+		System.out.println("shorting based on student's mother name :");
 		
 		Comparator motherName=(o1,o2)->{
 			return ((Student)o1).getMotherName().compareTo(((Student)o2).getMotherName());

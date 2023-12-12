@@ -1,0 +1,9 @@
+package com.crnts.streams;
+
+public class NameList {
+
+	public static void main(String[] args) {
+     
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.crnts.streams;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class StreamClass {
+
+	public static void main(String[] args) {
+      ArrayList<Integer> arraylist=new ArrayList();
+      Random r =new Random();
+      for(int index=1;index<1000;index++)
+      {
+    	  arraylist.add(r.nextInt());
+      }
+	}
+
+}

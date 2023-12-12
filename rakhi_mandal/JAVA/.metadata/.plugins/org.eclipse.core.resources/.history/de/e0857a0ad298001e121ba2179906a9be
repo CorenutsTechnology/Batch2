@@ -1,0 +1,29 @@
+package com.crnts.streams;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void display()
+	{
+		//stream() is not supporting Maps
+//		Map<Integer, Employee> details=new HashMap<>();
+//		details.put(1, new Employee("Developer","Tom"));
+//		details.put(1, new Employee("Tester","jack"));
+		
+		List<Employee> details=new ArrayList<>();
+		details.add(new Employee("Developer","Tom"));
+		details.add(new Employee("Tester","Jack"));
+		details.stream().forEach((e)->System.out.println(e));		
+		
+		
+	}
+
+}

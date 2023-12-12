@@ -1,0 +1,22 @@
+package com.crnts.streams;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class StreamClass {
+
+	public static void main(String[] args) {
+      ArrayList<Integer> arraylist=new ArrayList();
+      ArrayList<Integer> evenarraylist=new ArrayList();
+      Random r =new Random();
+      for(int index=0;index<1000;index++)
+      {   
+    	  arraylist.add(r.nextInt());
+      }
+      for(int index=0;index<1000;index++)
+      {   if(evenarraylist.get(index)%2==0)
+    	  evenarraylist.add(arraylist.get(index));
+      }
+	}
+
+}

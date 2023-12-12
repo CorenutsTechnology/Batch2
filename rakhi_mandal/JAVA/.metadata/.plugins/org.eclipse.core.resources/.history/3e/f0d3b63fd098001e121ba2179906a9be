@@ -1,0 +1,23 @@
+package com.crnts.streams;
+
+public class Employee {
+  private int eId;
+  private String name;
+public int geteId() {
+	return eId;
+}
+public void seteId(int eId) {
+	this.eId = eId;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public Employee() {
+	super();
+	// TODO Auto-generated constructor stub
+}
+  
+}

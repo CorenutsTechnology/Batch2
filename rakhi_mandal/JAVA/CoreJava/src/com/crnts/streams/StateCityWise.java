@@ -15,10 +15,10 @@ public class StateCityWise {
 		listStudents.add(new Student(3,"jinnie","female","mech","mg nagar","bbsr","odisha"));
 		listStudents.add(new Student(2,"joe","male","cse","mg nagar","puri","odisha"));
 		
-//	listStudents.stream().collect(Collectors.groupingBy(Student::getState)).entrySet().forEach(e ->{System.out.println("State - " + e.getKey());
+	listStudents.stream().collect(Collectors.groupingBy(Student::getState)).entrySet().forEach(e ->{System.out.println("State - " + e.getKey());
 //
-//		e.getValue().stream().collect(Collectors.groupingBy(Student::getCity,Collectors.counting())).entrySet().forEach((e1)->System.out.println(e1.getKey()+"-->"+e1.getValue()));});
-	Map<String,Map<String,long>>=listStudents.stream().collect(Collectors.groupingBy(Student::getCity,Collectors.counting())).entrySet().forEach(e1 ->System.out.println("State - " + e1.getvalue()));
+		e.getValue().stream().collect(Collectors.groupingBy(Student::getCity,Collectors.counting())).entrySet().forEach((e1)->System.out.println(e1.getKey()+"-->"+e1.getValue()));});
+//	Map<String,Map<String,long>>=listStudents.stream().collect(Collectors.groupingBy(Student::getCity,Collectors.counting())).entrySet().forEach(e1 ->System.out.println("State - " + e1.getvalue()));
 
 	
 		

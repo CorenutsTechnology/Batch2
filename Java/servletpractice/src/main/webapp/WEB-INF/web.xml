@@ -1,0 +1,155 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+
+<web-app>
+	<display-name>Servlet</display-name>
+	<servlet>
+		<servlet-name>Insert</servlet-name>
+		<servlet-class>com.student.controller.InsertionController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Insert</servlet-name>
+		<url-pattern>/firstWeb</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FetchController</servlet-name>
+		<servlet-class>com.student.controller.FetchController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FetchController</servlet-name>
+		<url-pattern>/fetch</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Update</servlet-name>
+		<servlet-class>com.student.controller.UpdateController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Update</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ErrorMessageController</servlet-name>
+		<servlet-class>com.student.controller.ErrorMessageController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ErrorMessageController</servlet-name>
+		<url-pattern>/exception</url-pattern>
+	</servlet-mapping>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/exception</location>
+	</error-page>
+
+	<servlet>
+		<servlet-name>Delete</servlet-name>
+		<servlet-class>com.student.controller.DeleteController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+
+		<servlet-name>HeaderDetailsExtract</servlet-name>
+		<servlet-class>com.student.controller.HeaderDetailsExtract</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HeaderDetailsExtract</servlet-name>
+		<url-pattern>/extract</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<init-param>
+			<param-name>username</param-name>
+			<param-value>Pravalika</param-value>
+		</init-param>
+		<init-param>
+			<param-name>password</param-name>
+			<param-value>pravali1234</param-value>
+		</init-param>
+
+		<servlet-name>ContextExample</servlet-name>
+		<servlet-class>com.student.controller.ContextExample</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ContextExample</servlet-name>
+		<url-pattern>/context</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>username</param-name>
+		<param-value>Global-Servlet</param-value>
+	</context-param>
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>Technologies</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>HttpSessionExample</servlet-name>
+		<servlet-class>com.student.controller.HttpSessionExample</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HttpSessionExample</servlet-name>
+		<url-pattern>/session</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>WelcomePage</servlet-name>
+		<servlet-class>com.example.WelcomePage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WelcomePage</servlet-name>
+		<url-pattern>/welcome</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>FilterExample</filter-name>
+		<filter-class>com.student.controller.FilterExample</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>FilterExample</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>FilterExample2</filter-name>
+		<filter-class>com.student.controller.FilterExample2</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>FilterExample2</filter-name>
+		<url-pattern>/update</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<init-param>
+			<param-name>username</param-name>
+			<param-value>Authentication-filter</param-value>
+		</init-param>
+		<init-param>
+			<param-name>password</param-name>
+			<param-value>12345</param-value>
+		</init-param>
+		<filter-name>AuthenticationUsingFilter</filter-name>
+		<filter-class>com.student.controller.AuthenticationUsingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>AuthenticationUsingFilter</filter-name>
+		<url-pattern>/fetch</url-pattern>
+	</filter-mapping>
+
+	<listener>
+		<listener-class>com.student.controller.SessionListner</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.student.controller.ServletContextListnerEx</listener-class>
+	</listener>
+
+</web-app>

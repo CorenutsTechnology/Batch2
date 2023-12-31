@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+           
+      <context:annotation-config />
+           
+          <bean id="product-1" class="shoppingSpring.Product" autowire="byName" scope="singleton">		  
+			  <property name="id" value="101"/>
+			  <property name="name" value="Phone"/>
+			  <property name="price" value="20000"/>			  
+		  </bean>
+           
+           <bean id="product-2" class="shoppingSpring.Product">
+			   <property name="id">
+				   <value>102</value>
+			   </property>
+			   <property name="name" value="Laptop"/>
+			   <property name="price" value="30000"/>
+			   <property name="address">
+				   <ref  bean="address"/>
+			   </property>
+		   </bean>
+           
+           <bean id="product" class="shoppingSpring.Product" autowire="constructor" >
+			   <constructor-arg name="id" value="103"></constructor-arg>
+			   <constructor-arg name="name" value="Book"></constructor-arg>
+			   <constructor-arg name="price" value="500"></constructor-arg>
+			  
+		   </bean>
+           
+           <bean id="address" class="shoppingSpring.Address" init-method="init" destroy-method="destroy" >
+			   <property name="address" value="Banglore" />
+		   </bean>
+           
+           <bean id="address-2" class="shoppingSpring.Address" >
+			   <property name="address" value="Hyderabad" />
+		   </bean>
+           
+        	<bean id="cart" class="shoppingSpring.Cart">
+			 <property name="id" value="201" />
+			 <property name="name" value="Shirt"/>
+			 <property name="products">
+				 <list>
+					 <ref bean="product-1" />
+					 <ref bean="product-2" />
+				 </list>
+			 </property>
+			
+		 </bean>
+		 
+</beans>
+
+
+
+
+
+
+

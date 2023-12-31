@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color:  rgb(197, 197, 197);
+}
+.container{
+    width: 600px;   
+    display: flex;
+    margin: 0 auto;
+    margin-top: 3vh;
+    background-color:rgb(216, 209, 209);
+    padding: 10px 20px;
+}
+.box1{
+    margin: 25px 0px 20px 0px  ;
+    height: 484px;
+    width: 200px;
+    border: none;
+    background-color: white;
+    box-shadow: 10vh;
+    position: relative;
+    padding: 14px;
+    text-align: center;
+}
+.box2{
+    margin: 16px 0px 20px  ;
+    height: 500px;
+    width: 200px;
+    border: none;
+    background-color: rgb(41, 171, 135);
+    box-shadow: 10vh;
+    position: relative;
+    padding: 14px;
+    text-align: center;
+}
+
+.container .circle{
+    border: 1px solid black;
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+    margin: 11px auto;
+    background-color: red;
+    color: white;
+    font-size: 4vh;
+    
+}
+.container .circle_2{
+    border: none;
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+    margin: 11px auto;
+    background-color: white;
+    color: black;
+    font-size: 4vh;
+    
+}
+.container .circle .value , .container .circle_2 .value{
+   
+    position: absolute; 
+    top: 15vh; 
+    left: 10vh; 
+}
+.container .circle .sup , .container .circle_2 .sup{
+    position: absolute; 
+    top: 15vh; 
+    left: 16vh; 
+}
+
+ .ptag1{
+    font-size: 12px;
+    color: grey;
+}
+.ptag2{
+    margin-top: 2vh;
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 1vh;
+}
+.ptag1_2{
+    font-size: 12px;
+    color: white;
+}
+.ptag2_2{
+    margin-top: 2vh;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 1vh;
+}
+.download1{
+    color: grey;
+    margin-bottom: 2vh;
+}
+.line{
+    border: 1px solid grey;
+    height: 1px;
+    width: 113px;
+    margin-left: 5vh;
+}
+.download1_2{
+    color: white;
+    margin-bottom: 2vh;
+}
+.line_2{
+    border: 1px solid white;
+    height: 1px;
+    width: 113px;
+    margin-left: 5vh;
+}
+.line2{
+    border: 1px solid grey;
+    height: 1px;
+    width: 113px;
+    margin-left: 5vh;
+}
+.line2_2{
+    border: 1px solid white;
+    height: 1px;
+    width: 113px;
+    margin-left: 5vh;
+}
+.line3{
+    border: 1px solid grey;
+    height: 1px;
+    width: 113px;
+    margin-left: 5vh;
+}
+.atag a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.atag{
+    margin-top: 6vh;
+}
+
+.atag_2 a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    background-color: rgb(70, 191, 157);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2rem;
+}
+.atag_2{
+    margin-top: 6vh;
+}

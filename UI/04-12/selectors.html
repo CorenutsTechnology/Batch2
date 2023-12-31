@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>selectors Practice</title>
+        <style>
+            ul ul{
+                display: none;
+            }
+            ul{
+                list-style: none;
+                padding-left: 0;
+            }
+            #main-menu > li{
+                float: left;
+            }
+            #main-menu > li:hover ul{
+                display: block;
+            }
+            #main-menu > li >a{
+                background: #333;
+                color: #fff;
+                padding: 0.2rem;
+                cursor: pointer;
+                margin-right: 5px;
+            }
+            #main-menu > li > a:hover{
+                background-color: rgb(174, 151, 198);
+            }
+            ul ul > li >a{
+                background-color: none;
+                color: #000;
+            }
+
+            ul ul > li >a:hover , ul ul > li > span:hover{
+                background-color: #565656;
+                color: #fff;
+                cursor: pointer;
+            }
+            #main-menu > :last-child > a{
+                margin-right: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="main-menu">
+            <li>
+                <a>Main Menu</a>
+                <ul>
+                    <li><span>Sub Menu 1</span></li>
+                    <li><span>Sub Menu 2</span></li>
+                    <li><span>Sub Menu 3</span></li>
+                    <li><a>Sub Menu 4</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a>Main Menu</a>
+                <ul>
+                    <li><span>Sub Menu 1</span></li>
+                    <li><span>Sub Menu 2</span></li>
+                    <li><span>Sub Menu 3</span></li>
+                    <li><a>Sub Menu 4</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </body>
+</html>

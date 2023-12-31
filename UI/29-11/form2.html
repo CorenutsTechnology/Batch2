@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Details</title>
+    </head>
+    <body>
+        <form action="success.html" method="post" >
+            <table>
+                <tr>
+                    <td><label for=""  >Student Name*</label></td>
+                    <td><input type="text" value="enter name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password*</label></td>
+                    <td><input type="password" value="" required></td>
+                </tr>
+                <tr>
+                    <td><label for="">Date of Birth</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender">Female
+                        <input type="radio" name="gender">Male
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Blood Group</td>
+                    <td>
+                        <select >
+                            <option value="option1">A+</option>
+                            <option value="option2">A-</option>
+                            <option value="option3">B+</option>
+                            <option value="option4">O+</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Subjects</label></td>
+                    <td>
+                        <input type="checkbox" name="SQL">Java <br>
+                        <input type="checkbox" name="SQL">SQL <br>
+                        <input type="checkbox" name="JDBC">JDBC <br>
+                        <input type="checkbox" name="HTML">HTML
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td>Other</td>
+                    <td><textarea name="text" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+            </table>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    
+    </body>
+</html>

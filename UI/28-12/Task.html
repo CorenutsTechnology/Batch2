@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="save()" id="save">Save</button>
+    <button onclick="insert()" id="insert">Add New</button>
+    <table border="1px" id="student">
+        <tr>
+            <th>Name of university</th>
+            <th>Year of Pass</th>
+            <th>Marks %</th>
+        </tr>
+        <tbody id="student-data">
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+     let array = []
+     console.log(array);
+    function save()
+    {
+        let table = document.querySelector('#student-data');
+        let trArray = Array.from(table.children);
+        let obj = {}
+        for(let i in trArray)
+        {
+           obj.univ= trArray[i].children[0].children[0].value;
+           obj.yop = trArray[i].children[1].children[0].value;
+           obj.marks=trArray[i].children[2].children[0].value;
+           array.push(obj);
+        }
+       console.log(array);
+    }
+    function insert()
+    {
+       
+
+        for(let s of array)
+         {
+            let html = "<tr><td>"+s.univ+"</td><td>"+s.yop+"</td><td>"+s.marks+"</td></tr>"; 
+            document.querySelector('#student-data').innerHTML=html;
+         }  
+         let input = "<input type='text'>"
+         let input2 = "<input type='number'>"
+         let row = "<tr><td>"+input+"</td><td>"+input+"</td><td>"+input2+"</td></tr>"; 
+         document.querySelector('#student-data').innerHTML=document.querySelector('#student-data').innerHTML+row;
+    }
+
+</script>
+</html>

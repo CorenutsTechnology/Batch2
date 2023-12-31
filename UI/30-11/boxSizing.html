@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Box sizing example</title>
+    <style>
+        *{
+            margin: 0px;
+            /* padding: 0px; */
+            box-sizing: border-box;
+        }
+        .box{
+            width: 33.333%;
+            float: left;
+            
+        }
+        div{
+            display: block;
+        }
+        .content{
+            width: 100%;
+            height: 20px;
+        }
+        .content > p{
+            /* padding: 1px; */
+            color: white;
+            background-color: blueviolet;
+           
+        }
+    </style>
+    
+    </head>
+    <body>
+        <div class="box">
+            <div class="content">
+                <p>hello</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <p>hello</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <p>hello</p>
+            </div>
+        </div>
+    </body>
+</html>

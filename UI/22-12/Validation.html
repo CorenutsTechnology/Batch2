@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Phone Number:</label>
+    <input type="text"  id="mobile" placeholder="enter phone number"> <br>
+    <button onclick="validatePhoneNumber()" >Validate</button>
+</body>
+<script>
+    function validatePhoneNumber() {
+        const userEnteredNumber = document.getElementById('mobile').value;
+        // console.log(typeof userEnteredNumber);
+        var phoneno = /^\d{10}$/;
+
+        if (userEnteredNumber.match(phoneno)) {
+            document.getElementById('mobile').style.background="green";
+        } else {
+            document.getElementById('mobile').style.background="red";
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let car = {
+        year:2005,
+        type: 'benz',
+        color: 'Black',
+        engine:{
+            company: 'mahindra'
+        }
+    }
+    //different ways of object cloning
+    // let ev= car; //modifications will reflect in other object
+    // let ev = Object.assign({},car); //do not work in case of inner objects
+    // let ev = structuredClone(car); // works fine
+
+    let car2 ={};
+    //using for loop
+    for(k in car)
+    {
+        if(typeof car[k] ==  'object')
+        {
+           car2[k]=structuredClone(car[k]);
+        }
+        else{
+            car2[k] =car[k];
+        }
+    }
+   car.engine.company='pravalika'
+    console.log(car);
+    console.log(car2);
+</script>
+</html>

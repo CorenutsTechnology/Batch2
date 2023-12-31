@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(209, 192, 192);
+}
+.container{
+    width: 700px;   
+    display: flex;
+    margin: 0 auto;
+    margin-top: 3vh;
+}
+
+.box{
+    margin-right: 10px;
+    height: 540px;
+    width: 180px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: 10vh;
+    position: relative;
+}
+.box > .ptag{
+    font-size: 3vh;
+    padding: 6vh 10px 10px 3px;
+    text-align: center;
+}
+.box .button{
+    height: 6vh;
+    text-align: center;
+    margin-left: 15px;
+    border: 1px solid black;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: blueviolet;
+    margin-bottom: 4vh;
+}
+.box .ptag2{
+    text-align: center;
+    padding: 8px;
+}
+.box .atag a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.box .atag{
+    position: absolute;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: rgb(125, 13, 205);
+    width: 20vh;
+   text-align: center;
+   margin: 0 auto;
+   border-radius: 14px;
+   left: 5vh;
+   bottom: 1vh;
+}
+.button{
+    font-size: 16px;
+    color: white;
+}
+.dollar{
+    position: absolute;
+    top: 12vh;
+    left: 10vh;
+}
+.month{
+    position: absolute;
+    top: 12vh;
+    /* right: 2px; */
+    left: 17vh;
+}
+.value{
+    position: absolute;
+    top: 13vh;
+    left: 12vh;
+}

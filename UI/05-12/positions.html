@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Positions Practice</title>
+    <style>
+        .static {
+            width: 10%;
+            height: 30px;
+            background-color: yellow;
+            position: static;
+            /* top: 15%; it is not working */
+            left: 15%;
+            /* for static these top ,right won't work */
+
+        }
+
+        .relative {
+            width: 100%;
+            height: 30px;
+            background-color: rgb(0, 255, 17);
+            position: relative;
+            left: 3%;
+            /* top: 5%; */
+        }
+
+        .subrelative {
+            width: 25%;
+            height: 45px;
+            background-color: blue;
+            position: relative;
+            top: 5px;
+        }
+
+        .absolute {
+            width: 100%;
+            height: 30px;
+            background-color: rgb(18, 31, 19);
+            color: white;
+            position: absolute;
+            left: 5%;
+            top: 4%;
+        }
+
+        .sub_absolute {
+            width: 30%;
+            height: 20px;
+            background-color: rgb(175, 180, 176);
+            color: rgb(109, 15, 15);
+            position: absolute;
+            left: 8%;
+            top: 0%;
+        }
+
+        .fixed {
+            width: 50%;
+            height: 50px;
+            background-color: rgb(209, 10, 149);
+            color: rgb(255, 255, 255);
+            position: fixed;
+            /* left: 5%;
+                top: 4%; */
+        }
+
+        .sticky {
+            width: 40%;
+            height: 30px;
+            background-color: rgb(10, 146, 209);
+            color: rgb(255, 255, 255);
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">static Type</div>
+    <h4>Sibling</h4>
+    <div class="relative">Relative Type
+        <div class="subrelative">sub relative box</div>
+    </div>
+
+    <div class="absolute">
+        absolute type
+        <div class="sub_absolute">sub absolute</div>
+    </div>
+
+    <div class="fixed">Fixed</div>
+
+
+    <pre>Lorem ipsum dolor sit amet consectetur
+             adipisicing elit. Voluptatibus
+             , quam temporibus.
+              At ad omnis aperiam. Ipsam in 
+              nihil eum fugit maiores harum ullam f
+              acilis quisquam eligendi odio, quo ex
+              plicabo deleniti.</pre>
+    <pre>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptatibus
+                , quam temporibus.
+                 At ad omnis aperiam. Ipsam in 
+                 nihil eum fugit maiores harum ullam f
+                 acilis quisquam eligendi odio, quo ex
+                 plicabo deleniti.</pre>
+    <pre>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Voluptatibus
+                    , quam temporibus.
+                     At ad omnis aperiam. Ipsam in 
+                     nihil eum fugit maiores harum ullam f
+                     acilis quisquam eligendi odio, quo ex
+                     plicabo deleniti.</pre>
+    <pre>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Voluptatibus
+                        , quam temporibus.
+                         At ad omnis aperiam. Ipsam in 
+                         nihil eum fugit maiores harum ullam f
+                         acilis quisquam eligendi odio, quo ex
+                         plicabo deleniti.</pre>
+    <pre>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Voluptatibus
+                            , quam temporibus.
+                             At ad omnis aperiam. Ipsam in 
+                             nihil eum fugit maiores harum ullam f
+                             acilis quisquam eligendi odio, quo ex
+                             plicabo deleniti.</pre>
+    <div class="sticky">Sticky Type</div>
+    <pre>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptatibus
+                                , quam temporibus.
+                                 At ad omnis aperiam. Ipsam in 
+                                 nihil eum fugit maiores harum ullam f
+                                 acilis quisquam eligendi odio, quo ex
+                                 plicabo deleniti.
+        </pre>
+    <pre>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptatibus
+            , quam temporibus.
+             At ad omnis aperiam. Ipsam in 
+             nihil eum fugit maiores harum ullam f
+             acilis quisquam eligendi odio, quo ex
+             plicabo deleniti.
+</pre>
+    <pre>Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Voluptatibus
+    , quam temporibus.
+     At ad omnis aperiam. Ipsam in 
+     nihil eum fugit maiores harum ullam f
+     acilis quisquam eligendi odio, quo ex
+     plicabo deleniti.
+</pre>
+    <pre>Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Voluptatibus
+    , quam temporibus.
+     At ad omnis aperiam. Ipsam in 
+     nihil eum fugit maiores harum ullam f
+     acilis quisquam eligendi odio, quo ex
+     plicabo deleniti.
+</pre>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, repud
+    iandae culpa! Nesciunt aspernatur rem ea
+    sequi voluptatum corrupti esse debitis optio, 
+    ex, ipsam neque culpa alias dolor, ipsum nostrum iste.
+    <pre>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptatibus
+        , quam temporibus.
+         At ad omnis aperiam. Ipsam in 
+         nihil eum fugit maiores harum ullam f
+         acilis quisquam eligendi odio, quo ex
+         plicabo deleniti.
+    </pre>
+    <pre>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Voluptatibus
+        , quam temporibus.
+         At ad omnis aperiam. Ipsam in 
+         nihil eum fugit maiores harum ullam f
+         acilis quisquam eligendi odio, quo ex
+         plicabo deleniti.
+    </pre>
+</body>
+
+</html>

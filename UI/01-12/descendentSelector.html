@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Descendent Selector</title>
+        <style>
+            .main{
+                color: red;
+            }
+            .main2{
+                color: green;
+            }
+             .main2 > div > div > p{
+                color: brown;
+            }
+           
+            .one {
+                color: magenta ;
+            } 
+            .one p{
+                color: blue;
+            }
+            .pravali >div>div>p{
+                color: azure;
+                background-color: black;
+            }
+        </style>
+       
+    </head>
+    <body>
+        <div class="main">
+            <div class="main2">
+                <div class="one">
+                    <p>one</p>
+                     hello
+                </div>
+                <p>Two</p>
+                <div>
+                    <div>
+                        <p>Three</p>
+                    </div>
+                </div>
+                <p>main2 child</p>
+            </div>
+            <p>main child</p>
+        </div>
+        <div class="pravali">
+            <div>
+                <div>
+                    <p>pravalika</p>
+                    <div>
+                        <p>banglore</p>
+                    </div>
+                </div>
+                <p>rose</p>
+            </div>
+        </div>
+
+    </body>
+</html>

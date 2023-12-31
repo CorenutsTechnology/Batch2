@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="check" class="hide" onclick="showHide()" >Hide</button>
+    <table border="1px" id="student">
+        <tr>
+            <th>Name</th>
+            <th>Intsi</th>
+            <th>Marks</th>
+        </tr>
+        <tbody id="student-data">
+
+        </tbody>
+    </table>
+</body>
+<script>
+    let students = [
+        {
+            'name':'Berlin',
+            'insti':'Cambridge',
+            'marks':24
+        },
+        {
+            'name':'chaplin',
+            'insti':'California',
+            'marks':24
+        }
+    ];
+    function insert()
+    {
+        let data = document.getElementById('student-data');
+        for(let s of students)
+         {
+            let html = "<tr><td>"+s.name+"</td><td>"+s.insti+"</td><td>"+s.marks+"</td></tr>"; 
+            document.querySelector('#student-data').innerHTML=document.getElementById('student-data').innerHTML+html;
+         }   
+    }
+
+    function showHide()
+    {
+        let list =  document.getElementById('check').classList
+        if(list.contains('show'))
+        {
+            list.remove('show');
+            document.getElementById('check').innerHTML='Hide'
+            document.getElementById('student').style.display='block'
+        }
+        else{
+            list.add('show');
+            document.getElementById('check').innerHTML='Show'
+            document.getElementById('student').style.display='none'
+        }
+    }
+    
+</script>
+</html>

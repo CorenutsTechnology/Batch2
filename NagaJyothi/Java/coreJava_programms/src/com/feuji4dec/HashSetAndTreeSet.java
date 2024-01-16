@@ -1,5 +1,6 @@
 package com.feuji4dec;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -41,7 +42,6 @@ public class HashSetAndTreeSet
 //		Set<Product>set2=new TreeSet(p1);
 //		System.out.println("treeset");
 //		elements.treeSet(set2);
-		
 	}
 
 }

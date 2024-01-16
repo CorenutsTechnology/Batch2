@@ -10,12 +10,13 @@ class B extends A
 class C extends B
 {
 	
+	
 }
 public class UpperBound <T>
 {
-	public void display(UpperBound<? super A> value )	
+	public void display(UpperBound<? super UpperBound> value )	
 	{
-		
+		System.out.println("it accept");
 		
 	}
 	public static void main(String[] args) 
@@ -25,7 +26,7 @@ public class UpperBound <T>
 		A a1=new A();
 		B b1=new B();
 		C c1=new C();
-		res.display(a1);
+		res.display(c1);
 	}
 
 }

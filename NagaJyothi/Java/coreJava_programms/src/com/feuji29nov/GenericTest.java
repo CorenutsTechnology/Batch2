@@ -1,4 +1,4 @@
-package com.feuji29nov;
+ package com.feuji29nov;
 
 public class GenericTest 
 {

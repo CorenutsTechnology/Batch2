@@ -20,10 +20,10 @@ public class EmployeeTest
 		emp.add(new Employee(5,"supriya",30000.0));
 		emp.add(new Employee(6,"padmalatha",35000.0));
 		emp.add(new Employee(5,"raji",35000.0));
-		
+		System.out.println(emp.stream().mapToDouble(Employee::getEmpSal).sum());
 		//to display the all the records
 		Stream<Employee> s=emp.stream();
-		s.forEach((e)->System.out.println(e));
+		//s.forEach((e)->System.out.println(e));
 		/*
 		 * we will get run time exception as illegalStateException becoz
 		 * after completion of one operation on streams jvm close the  session if we try 
@@ -32,25 +32,29 @@ public class EmployeeTest
 //		 Stream<Employee> b=s.filter((e)->e.equals("jyothi"));
 //		 System.out.println(b);
 		
-		long num=emp.stream().count();
-		System.out.println(num);
-		emp.stream().collect(Collectors.toList()).forEach((e)->System.out.println(e));
+//		long num=emp.stream().count();
+//		System.out.println(num);
+		//emp.stream().collect(Collectors.toList()).forEach((e)->System.out.println(e));
 		System.out.println("---------");
 		
 		// display the records who are having salaray greater than 50000
-		emp.stream().filter((e)->e.getEmpSal()<50000).collect(Collectors.toList())
-		.forEach((e1)->System.out.println(e1));
+//		emp.stream().filter((e)->e.getEmpSal()<50000).collect(Collectors.toList())
+//		.forEach((e1)->System.out.println(e1));
 		
-		// display the records in assending order based on names.
-		System.out.println("------------------");
-		emp.stream().sorted(Comparator.comparing(Employee::getEmpName))
-		.filter((e)->e.getEmpSal()<50000).collect(Collectors.toList()).forEach((e)->System.out.println(e));
-		
+//		 display the records in assending order based on names.
+//		System.out.println("------------------");
+//		emp.stream().sorted(Comparator.comparing(Employee::getEmpName))
+//		.filter((e)->e.getEmpSal()<50000).collect(Collectors.toList()).forEach((e)->System.out.println(e));
+//		
 		//find maximu salary
-		DoubleSummaryStatistics res=emp.stream().collect(Collectors.summarizingDouble(Employee::getEmpSal));
-		System.out.println("maximum salay : "+res.getMax());
-		System.out.println("minimum salay: "+res.getMin());
-		System.out.println("Count:"+res.getCount());
+//		DoubleSummaryStatistics res=emp.stream().collect(Collectors.summarizingDouble(Employee::getEmpSal));
+//		System.out.println("maximum salay : "+res.getMax());
+//		System.out.println("minimum salay: "+res.getMin());
+//		System.out.println("Count:"+res.getCount());
+		List list=emp.stream().sorted(Comparator.comparing(Employee::getEmpSal)).collect(Collectors.toList());
+		System.out.println(list.get(0));
+		list.stream().sorted().forEach((e)->System.out.println(e));
+		
 		
 		
 		

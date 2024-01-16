@@ -25,6 +25,11 @@ public class DiffWaysOfIterations
 	{
 		System.out.println(iterator1.next());
 	}
+	
+	for(Map.Entry<Integer, Student> entry:map.entrySet())
+	{
+		System.out.println(entry);
+	}
 	}
    public static void main(String[] args) 
    {

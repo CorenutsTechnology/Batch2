@@ -19,12 +19,22 @@ public class Praticee
 		 * 
 		 * } System.out.println(i);
 		 */
-		        for(int index =1; index <= 10;index++) {
-		            if (index/2 ==0 && index/5 ==0) {
-		            System.out.print(index);
-		            }
-		        }
-		    
+//		        for(int index =1; index <= 10;index++) {
+//		            if (index/2 ==0 && index/5 ==0) {
+//		            System.out.print(index);
+//		            }
+//		        }
+//		    
+		for(int i=1;i<=3;i++)
+		{
+			for(int j=0;j<i;j++)
+				
+			{
+				//if(i>=j)
+				System.out.print(i+j);
+			}
+			System.out.println();
+		}
 		
 	}
 

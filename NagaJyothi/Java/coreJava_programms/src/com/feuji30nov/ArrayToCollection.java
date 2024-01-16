@@ -15,10 +15,6 @@ public class ArrayToCollection
 			
 		}
 		Iterator<Integer> iterator=list.iterator();
-		/*
-		 * while(true) { System.out.println(iterator.next()); }
-		 * we will get Runtime exception i.e NoSuchElement Exception.
-		 */
 		while(iterator.hasNext()) { 
 			System.out.println(iterator.next()); 
 			}

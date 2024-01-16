@@ -22,6 +22,7 @@ public class SortTheElements
 		
 		SortTheElements sort=new SortTheElements();
 		//sort.sortTheElemnts(list, Student);
+		//list.stream().sorted(Comparator.comparing(Student::getSage)).forEach((e)->System.out.println(e));
 	}
 
 }

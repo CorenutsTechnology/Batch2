@@ -4,7 +4,7 @@ public class UsingSynchronizedMethod implements Runnable {
 	@Override
 	public void run() {
 		displayNumbers();
-		//caluclate();
+		caluclate();
 
 //		for(int index=0;index<=10;index++)	
 //		{
@@ -28,17 +28,17 @@ public class UsingSynchronizedMethod implements Runnable {
 //			}
 		}
 	}
-	/*
-	 * public synchronized void caluclate() {
-	 * System.out.println("caluclate method"); }
-	 */
+	
+	  public synchronized void caluclate() {
+	  System.out.println("caluclate method"); }
+	 
 
 	public static void main(String[] args) {
 		UsingSynchronizedMethod u1 = new UsingSynchronizedMethod();
 		UsingSynchronizedMethod u2 = new UsingSynchronizedMethod();
 		Thread thread1 = new Thread(u1);
 		thread1.start();
-		Thread thread2 = new Thread(u2);
+		Thread thread2 = new Thread(u1);
 		thread2.start();
 
 	}
